@@ -40,6 +40,11 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
+				<MenuItem x:Name="btnGestorBodega" Header="Bodega"/>
+				<MenuItem x:Name="btnGestorProducto" Header="Producto"/>
+				<MenuItem x:Name="btnGestorProveedor" Header="Proveedor"/>
+				<MenuItem x:Name="btnGestorUsuario" Header="Usuarios" ItemsSource="{Binding ClickEvent, ElementName=btnGestorUsuario}"/>
+				<MenuItem x:Name="btnTipoUsuario" Header="Tipo Usuario"/>
 			</MenuItem>
 			<MenuItem x:Name="btnProcesos" Header="   Procesos" Width="97" Background="#FFE3E3E3" FontFamily="Century Gothic" >
 				<MenuItem.Icon>

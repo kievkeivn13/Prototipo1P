@@ -10,12 +10,36 @@
     <Compile Update="loginscreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Ventanas\GestorProducto.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\wpfGestorBodega.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\wpfGestorProveedor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="loginscreen.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\GestorProducto.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfGestorBodega.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfGestorProveedor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfGestorusuario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfTipousuario.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

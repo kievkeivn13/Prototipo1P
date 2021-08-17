@@ -27,7 +27,14 @@ namespace PrototipoLaboratorio
             
         }
 
-        
+        private void btnGestionusuario_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfGestorusuario());
+        }
+        private void btnTipousuario_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfTipousuario());
+        }
         private void btnRptPaciantes_Click(object sender, RoutedEventArgs e)
         {
           //  rptPaciente dashboard = new rptPaciente();
