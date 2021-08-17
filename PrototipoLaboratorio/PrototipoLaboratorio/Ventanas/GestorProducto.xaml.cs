@@ -53,7 +53,7 @@ namespace PrototipoLaboratorio.Ventanas
 
             try
             {
-                string cadena = "SELECT nombre_producto FROM BODEGAS_AGRICOLAS.PRODUCTO";
+                string cadena = "SELECT nombre_bodega FROM BODEGAS_AGRICOLAS.BODEGA";
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
@@ -65,7 +65,7 @@ namespace PrototipoLaboratorio.Ventanas
                 cboTipoBodega.Items.Add("Selecione una opción");
                 while (busqueda.Read())
                 {
-                    cboTipoBodega.Items.Add(busqueda["nombre_producto"].ToString());
+                    cboTipoBodega.Items.Add(busqueda["nombre_bodega"].ToString());
                 }
                 cboTipoBodega.SelectedIndex = 0;
                 busqueda.Close();
@@ -111,7 +111,7 @@ namespace PrototipoLaboratorio.Ventanas
                 {
                     string cadena = "INSERT INTO " +
                         " BODEGAS_AGRICOLAS.PRODUCTO (id_producto, id_bodega, nombre_producto," +
-                        " precio, stock, status_producto) VALUES (" +
+                        " precio_producto, stock_producto, status_producto) VALUES (" +
                         "'" + txtIdProducto.Text + "', '"
                          + txtIdBodega.Text + "', '"
                          + txtNombreProducto.Text + "', '"
@@ -158,8 +158,8 @@ namespace PrototipoLaboratorio.Ventanas
                     string cadena = "update BODEGAS_AGRICOLAS.PRODUCTO set id_producto ='" + this.txtIdProducto.Text
                         + "',id_bodega ='" + this.txtIdBodega.Text
                         + "',nombre_precio   ='" + this.txtNombreProducto.Text
-                        + "',precio='" + this.txtPrecio.Text
-                        + "stock ='" + this.txtStock
+                        + "',precio_producto='" + this.txtPrecio.Text
+                        + "stock_producto ='" + this.txtStock
                         + "',status_producto ='" + this.txtEstadousuario.Text
 
                         + "'where id_producto='" + this.txtIdProducto.Text + "';";
@@ -272,8 +272,8 @@ namespace PrototipoLaboratorio.Ventanas
                         txtIdProducto.Text = busqueda["id_producto"].ToString();
                         txtIdBodega.Text = busqueda["id_bodega"].ToString();
                         txtNombreProducto.Text = busqueda["nombre_Producto"].ToString();
-                        txtPrecio.Text = busqueda["precio"].ToString();
-                        txtStock.Text = busqueda["strock"].ToString();
+                        txtPrecio.Text = busqueda["precio_producto"].ToString();
+                        txtStock.Text = busqueda["strock_producto"].ToString();
                         txtEstadousuario.Text = busqueda["status_producto"].ToString();
                     }
                     else

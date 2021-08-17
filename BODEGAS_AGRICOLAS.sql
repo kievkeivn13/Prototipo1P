@@ -86,6 +86,7 @@ email_proveedor varchar(50) not null,
 status_proveedor varchar(1) not null,
 primary key (id_proveedor, nit_proveedor)
 )ENGINE=InnoDB DEFAULT CHARSET =utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 create table INVENTARIO(
 id_inventario varchar(15) primary key not null,
 nombre_inventario varchar(30) not null,
@@ -96,18 +97,18 @@ status_inventario varchar(2) not null,
 
 foreign key (id_tipo_inventario) references TIPO_INVENTARIO(id_tipo_inventario),
 foreign key (id_bodega) references BODEGA(id_bodega),
-foreign key (id_proveedor) references BODEGA(id_proveedor)
+foreign key (id_proveedor) references PROVEEDOR(id_proveedor)
 )ENGINE=InnoDB DEFAULT CHARSET =utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 create table PRODUCTO(
 id_producto varchar(15) primary key not null,
+id_bodega varchar(15) not null,
 nombre_producto varchar(30) not null,
-id_inventario varchar(15) not null,
 precio_producto varchar(15) not null,
-status_producto varchar(2) not null,
 stock_producto int not null,
+status_producto varchar(2) not null,
 
-foreign key (id_inventario) references INVENTARIO(id_inventario)
+foreign key (id_bodega) references BODEGA(id_bodega)
 )ENGINE=InnoDB DEFAULT CHARSET =utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 create table ENCABEZADO_FACTURA(

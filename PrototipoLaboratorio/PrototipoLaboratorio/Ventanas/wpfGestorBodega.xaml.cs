@@ -51,13 +51,13 @@ namespace PrototipoLaboratorio.Ventanas
         {
             try
             {
-                string cadena = "SELECT * FROM BODEGAS_AGRICOLAS.BOEGA";
+                string cadena = "SELECT * FROM BODEGAS_AGRICOLAS.BODEGA";
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
 
                 OdbcDataAdapter dataAdp = new OdbcDataAdapter(consulta);
-                DataTable dt = new DataTable("BODEGAS_AGRICOLAS.BOEGA");
+                DataTable dt = new DataTable("BODEGAS_AGRICOLAS.BODEGA");
 
                 dataAdp.Fill(dt);
                 dgTipocambio.ItemsSource = dt.DefaultView;
@@ -78,7 +78,7 @@ namespace PrototipoLaboratorio.Ventanas
             {
                 try
                 {
-                    string cadena = "update BODEGAS_AGRICOLAS.BOEGA set id_bodega ='" + this.txtIdBodega.Text
+                    string cadena = "update BODEGAS_AGRICOLAS.BODEGA set id_bodega ='" + this.txtIdBodega.Text
                         + "',nombre_bodega ='" + this.txtNombreBodega.Text
                        
                         + "',status_bodega ='" + this.txtEstadomoneda.Text
@@ -98,7 +98,7 @@ namespace PrototipoLaboratorio.Ventanas
 
                 txtIdBodega.Text = "";
                 txtNombreBodega.Text = "";
-                
+                Cargartabla();
                 txtEstadomoneda.Text = "";
                 txtBuscar.Text = "";
 
@@ -122,7 +122,7 @@ namespace PrototipoLaboratorio.Ventanas
                 try
                 {
                     string cadena = "INSERT INTO" +
-                        " BODEGAS_AGRICOLAS.BOEGA (id_bodega, nombre_bodega, status_bodega) VALUES (" +
+                        " BODEGAS_AGRICOLAS.BODEGA (id_bodega, nombre_bodega, status_bodega) VALUES (" +
                         "'" + txtIdBodega.Text + "', '"
                             + txtNombreBodega.Text + "', '"
                            
@@ -136,7 +136,7 @@ namespace PrototipoLaboratorio.Ventanas
 
                     txtIdBodega.Text = "";
                     txtNombreBodega.Text = "";
-
+                    Cargartabla();
                     txtEstadomoneda.Text = "";
                     txtBuscar.Text = "";
                     txtIdBodega.IsEnabled = true;
@@ -162,7 +162,7 @@ namespace PrototipoLaboratorio.Ventanas
         {
             txtIdBodega.Text = "";
             txtNombreBodega.Text = "";
-
+            
             txtEstadomoneda.Text = "";
             txtBuscar.Text = "";
             txtIdBodega.IsEnabled = true;
@@ -178,7 +178,7 @@ namespace PrototipoLaboratorio.Ventanas
             try
             {
 
-                string cadena = "delete from BODEGAS_AGRICOLAS.BOEGA where id_bodega='" + this.txtIdBodega.Text + "';";
+                string cadena = "delete from BODEGAS_AGRICOLAS.BODEGA where id_bodega='" + this.txtIdBodega.Text + "';";
 
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
@@ -193,7 +193,7 @@ namespace PrototipoLaboratorio.Ventanas
                 }
                 txtIdBodega.Text = "";
                 txtNombreBodega.Text = "";
-
+                Cargartabla();
                 txtEstadomoneda.Text = "";
                 txtBuscar.Text = "";
                 txtIdBodega.IsEnabled = true;
@@ -215,7 +215,7 @@ namespace PrototipoLaboratorio.Ventanas
             {
                 try
                 {
-                    string Query = "select * from  BODEGAS_AGRICOLAS.BOEGA where id_bodega='" + this.txtBuscar.Text + "';";
+                    string Query = "select * from  BODEGAS_AGRICOLAS.BODEGA where id_bodega='" + this.txtBuscar.Text + "';";
 
                     OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
                     consulta.ExecuteNonQuery();
@@ -225,10 +225,10 @@ namespace PrototipoLaboratorio.Ventanas
 
                     if (busqueda.Read())
                     {
-                        txtIdBodega.Text = busqueda["id_moneda"].ToString();
-                        txtNombreBodega.Text = busqueda["nombre_moneda"].ToString();
+                        txtIdBodega.Text = busqueda["id_bodega"].ToString();
+                        txtNombreBodega.Text = busqueda["nombre_bodega"].ToString();
                         
-                        txtEstadomoneda.Text = busqueda["status_moneda"].ToString();
+                        txtEstadomoneda.Text = busqueda["status_bodega"].ToString();
                     }
                     else
                     {
