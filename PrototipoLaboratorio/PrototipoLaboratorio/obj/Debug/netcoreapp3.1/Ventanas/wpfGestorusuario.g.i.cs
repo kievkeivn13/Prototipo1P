@@ -222,7 +222,7 @@ namespace PrototipoLaboratorio.Ventanas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;component/ventanas/wpfgestorusuario.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;V1.0.0.0;component/ventanas/wpfgestorusuario.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Ventanas\wpfGestorusuario.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

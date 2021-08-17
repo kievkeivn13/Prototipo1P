@@ -54,7 +54,7 @@ namespace PrototipoLaboratorio.Ventanas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;component/ventanas/wpfgestorproveedor.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;V1.0.0.0;component/ventanas/wpfgestorproveedor.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Ventanas\wpfGestorProveedor.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
