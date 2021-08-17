@@ -40,11 +40,12 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem x:Name="btnGestorBodega" Header="Bodega"/>
-				<MenuItem x:Name="btnGestorProducto" Header="Producto"/>
+				<MenuItem x:Name="btnGestorBodega" Header="Bodega" ItemsSource="{Binding ClickEvent, ElementName=btnGestorBodega}" Click="btnGestorBodega_Click"/>
+				<MenuItem x:Name="btnGestorProducto" Header="Producto" ItemsSource="{Binding ClickEvent, ElementName=btnGestorProducto}" Click="btnGestorProducto_Click"/>
 				<MenuItem x:Name="btnGestorProveedor" Header="Proveedor"/>
-				<MenuItem x:Name="btnGestorUsuario" Header="Usuarios" ItemsSource="{Binding ClickEvent, ElementName=btnGestorUsuario}"/>
-				<MenuItem x:Name="btnTipoUsuario" Header="Tipo Usuario"/>
+				<MenuItem x:Name="btnGestorUsuario" Header="Usuarios" ItemsSource="{Binding ClickEvent, ElementName=btnGestorUsuario}" Click="btnGestionusuario_Click" />
+				<MenuItem x:Name="btnTipoUsuario" Header="Tipo Usuario" ItemsSource="{Binding ClickEvent, ElementName=btnTipoUsuario}" Click="btnTipousuario_Click"/>
+				<MenuItem x:Name="btnTipoInventario" Header="Tipo Inventario" ItemsSource="{Binding ClickEvent, ElementName=btnTipoInventario}" Click="btnTipoInventario_Click"/>
 			</MenuItem>
 			<MenuItem x:Name="btnProcesos" Header="   Procesos" Width="97" Background="#FFE3E3E3" FontFamily="Century Gothic" >
 				<MenuItem.Icon>

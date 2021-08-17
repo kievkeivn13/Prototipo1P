@@ -57,7 +57,7 @@ namespace PrototipoLaboratorio.Ventanas
                 consulta.ExecuteNonQuery();
 
                 OdbcDataAdapter dataAdp = new OdbcDataAdapter(consulta);
-                DataTable dt = new DataTable("CLINICA1.MONEDA");
+                DataTable dt = new DataTable("BODEGAS_AGRICOLAS.BOEGA");
 
                 dataAdp.Fill(dt);
                 dgTipocambio.ItemsSource = dt.DefaultView;

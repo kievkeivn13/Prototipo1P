@@ -35,10 +35,21 @@ namespace PrototipoLaboratorio
         {
             funGestorventas(new Ventanas.wpfTipousuario());
         }
-        private void btnRptPaciantes_Click(object sender, RoutedEventArgs e)
+        private void btnGestorProducto_Click(object sender, RoutedEventArgs e)
         {
-          //  rptPaciente dashboard = new rptPaciente();
-          //  dashboard.Show();
+            funGestorventas(new Ventanas.GestorProducto()); ;
+        }
+        private void btnGestorProveedor_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfGestorProveedor()); ;
+        }
+        private void btnTipoInventario_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfTipoInventario()); ;
+        }
+        private void btnGestorBodega_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfGestorBodega()); ;
         }
         private void funGestorventas(UserControl control)
         {

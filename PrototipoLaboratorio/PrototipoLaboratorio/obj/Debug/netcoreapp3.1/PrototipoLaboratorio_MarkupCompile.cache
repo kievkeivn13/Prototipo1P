@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
+G:\Git\P1\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
 PrototipoLaboratorio
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
-2622119162
+G:\Git\P1\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
+8-1132891564
 
-51100562469
+11-1043961787
 228-818779817
-loginscreen.xaml;MainWindow.xaml;
+loginscreen.xaml;MainWindow.xaml;Ventanas\GestorProducto.xaml;Ventanas\wpfGestorBodega.xaml;Ventanas\wpfGestorProveedor.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfTipoInventario.xaml;Ventanas\wpfTipousuario.xaml;
 
 False
 

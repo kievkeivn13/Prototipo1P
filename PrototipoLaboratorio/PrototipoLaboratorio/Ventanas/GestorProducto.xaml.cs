@@ -482,5 +482,6 @@ namespace PrototipoLaboratorio.Ventanas
                 btnBuscar_Click(sender, e);//llama al evento click del boton
             }
         }
-    }
+
+            }
 }

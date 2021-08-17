@@ -31,7 +31,7 @@ namespace PrototipoLaboratorio
             {
                 try
                 {
-                    string Query = "select COUNT(*) from CLINICA1.USUARIOS where nombre_usuario='" + this.txtUsuario.Text + "' AND passwd_usuario='" + this.txtContraseña.Password + "';";
+                    string Query = "select COUNT(*) from BODEGAS_AGRICOLAS.USUARIOs where nombre_usuario='" + this.txtUsuario.Text + "' AND passwd_usuario='" + this.txtContraseña.Password + "';";
 
                     OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
                     consulta.ExecuteNonQuery();

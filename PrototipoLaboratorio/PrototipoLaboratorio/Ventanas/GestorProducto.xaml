@@ -11,7 +11,7 @@
 			<Grid.Background>
 				<ImageBrush ImageSource="/Ventanas/fondo_2.jpg"/>
 			</Grid.Background>
-			<TextBox x:Name="txtIdBodega" HorizontalAlignment="Left" Margin="440,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" Visibility="Visible">
+			<TextBox x:Name="txtIdBodega" HorizontalAlignment="Left" Margin="440,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" Visibility="Hidden">
 				<TextBox.CaretBrush>
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
 				</TextBox.CaretBrush>
@@ -126,7 +126,7 @@
 				</DataGrid.Background>
 			</DataGrid>
 			<Label x:Name="lblStock" Content="Stock:" HorizontalAlignment="Left" Margin="24,391,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-			<TextBox x:Name="txtPrecio" HorizontalAlignment="Left" Margin="177,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" KeyDown="txtPrecio_KeyDown" >
+			<TextBox x:Name="txtPrecio" HorizontalAlignment="Left" Margin="177,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" >
 				<TextBox.CaretBrush>
 					<SolidColorBrush Color="Black" Opacity="0.8"/>
 				</TextBox.CaretBrush>

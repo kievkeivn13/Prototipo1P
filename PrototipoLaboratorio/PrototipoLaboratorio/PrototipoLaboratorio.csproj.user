@@ -19,6 +19,9 @@
     <Compile Update="Ventanas\wpfGestorProveedor.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Ventanas\wpfTipoInventario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="loginscreen.xaml">
@@ -37,6 +40,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfGestorusuario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfTipoInventario.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfTipousuario.xaml">
