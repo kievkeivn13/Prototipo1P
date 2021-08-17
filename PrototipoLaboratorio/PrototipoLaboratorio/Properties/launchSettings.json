@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PrototipoLaboratorio": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}

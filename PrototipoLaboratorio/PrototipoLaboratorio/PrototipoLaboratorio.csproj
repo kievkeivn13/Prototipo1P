@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Administracion.png" />
+    <None Remove="Aseguradoras.png" />
+    <None Remove="Ayuda.png" />
+    <None Remove="calendar_80px.png" />
+    <None Remove="Cotizaciones.png" />
+    <None Remove="eslogan.png" />
+    <None Remove="Facturacion.png" />
+    <None Remove="Finanzas.png" />
+    <None Remove="Fondologin.jpg" />
+    <None Remove="fondo_2.jpg" />
+    <None Remove="icono.png" />
+    <None Remove="key.png" />
+    <None Remove="loginbtn.png" />
+    <None Remove="logo LabASII.png" />
+    <None Remove="Paquetes.png" />
+    <None Remove="Personal.png" />
+    <None Remove="signout.png" />
+    <None Remove="stethoscope_80px.png" />
+    <None Remove="user.png" />
+    <None Remove="Usuarios.png" />
+    <None Remove="Ventanas\broom_80px.png" />
+    <None Remove="Ventanas\calendar_80px.png" />
+    <None Remove="Ventanas\delete_bin_80px.png" />
+    <None Remove="Ventanas\edit_file_80px.png" />
+    <None Remove="Ventanas\exit_80px.png" />
+    <None Remove="Ventanas\fondo_2.jpg" />
+    <None Remove="Ventanas\save_as_80px.png" />
+    <None Remove="Ventanas\search_80px.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Databasic.OdbcSql" Version="1.2.8" />
+    <PackageReference Include="Horseshoe.NET.Odbc" Version="1.2.4.2" />
+    <PackageReference Include="MySql.Data" Version="8.0.26" />
+    <PackageReference Include="MySqlConnector" Version="1.3.11" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.1" />
+    <PackageReference Include="System.Data.Odbc" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Administracion.png" />
+    <Resource Include="Aseguradoras.png" />
+    <Resource Include="Ayuda.png" />
+    <Resource Include="calendar_80px.png" />
+    <Resource Include="Cotizaciones.png" />
+    <Resource Include="eslogan.png" />
+    <Resource Include="Facturacion.png" />
+    <Resource Include="Finanzas.png" />
+    <Resource Include="Fondologin.jpg" />
+    <Resource Include="fondo_2.jpg" />
+    <Resource Include="icono.png" />
+    <Resource Include="key.png" />
+    <Resource Include="loginbtn.png" />
+    <Resource Include="logo LabASII.png" />
+    <Resource Include="Paquetes.png" />
+    <Resource Include="Personal.png" />
+    <Resource Include="signout.png" />
+    <Resource Include="stethoscope_80px.png" />
+    <Resource Include="user.png" />
+    <Resource Include="Usuarios.png" />
+    <Resource Include="Ventanas\broom_80px.png" />
+    <Resource Include="Ventanas\calendar_80px.png" />
+    <Resource Include="Ventanas\delete_bin_80px.png" />
+    <Resource Include="Ventanas\edit_file_80px.png" />
+    <Resource Include="Ventanas\exit_80px.png" />
+    <Resource Include="Ventanas\fondo_2.jpg" />
+    <Resource Include="Ventanas\save_as_80px.png" />
+    <Resource Include="Ventanas\search_80px.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fondologin.jpg" />
+    <None Remove="icono.png" />
+    <None Remove="key.png" />
+    <None Remove="loginbtn.png" />
+    <None Remove="user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PrototipoLaboratorio\PrototipoLaboratorio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fondologin.jpg" />
+    <Resource Include="icono.png" />
+    <Resource Include="key.png" />
+    <Resource Include="loginbtn.png" />
+    <Resource Include="user.png" />
+  </ItemGroup>
+
+</Project>
